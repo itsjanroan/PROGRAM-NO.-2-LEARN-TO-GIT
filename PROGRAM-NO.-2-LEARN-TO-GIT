@@ -39,3 +39,8 @@ class Header:
     ─██████─────────██████████████─██████─────────
     ──────────────────────────────────────────────
     """
+
+# Prompt the user to input their name
+    TextEffects.typewriter_print("\033[1mPlease enter your name: \033[0m")
+    name = input("\033[33m")
+    print("\033[0m", end='')
