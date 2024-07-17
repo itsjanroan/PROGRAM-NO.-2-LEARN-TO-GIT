@@ -3,3 +3,15 @@
 #Section: BSCpE 1-2
 #Date: July 17, 2024
 #Faculty: Prof. Danilo Madigalejos
+
+import sys
+import time
+
+class TextEffects:
+    @staticmethod
+    def typewriter_print(text):
+        for char in text:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(0.05)  # Adjust the delay as needed
+        print()  # Print a newline after the text is fully typed
