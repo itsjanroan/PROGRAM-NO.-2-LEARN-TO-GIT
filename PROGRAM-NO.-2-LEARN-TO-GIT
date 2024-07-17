@@ -15,3 +15,10 @@ class TextEffects:
             sys.stdout.flush()
             time.sleep(0.05)  # Adjust the delay as needed
         print()  # Print a newline after the text is fully typed
+
+  @staticmethod
+    def rainbow_print(text):
+        colors = ['\033[31m', '\033[33m', '\033[32m', '\033[34m', '\033[35m', '\033[36m']  # Red, Yellow, Green, Blue, Magenta, Cyan
+        for color in colors:
+            print(color + text, end='\r')
+            time.sleep(0.3)
