@@ -44,3 +44,8 @@ class Header:
     TextEffects.typewriter_print("\033[1mPlease enter your name: \033[0m")
     name = input("\033[33m")
     print("\033[0m", end='')
+
+# Prompt the user to input their dream job
+    TextEffects.typewriter_print("\033[1mWhat is your dream job? \033[0m")
+    dream_job = input("\033[32m")  # Green color for input text
+    print("\033[0m", end='')
